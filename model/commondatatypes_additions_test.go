@@ -16,22 +16,22 @@ func TestTimePeriodType(t *testing.T) {
 	assert.Equal(t, time.Duration(0), duration)
 
 	tc = &TimePeriodType{
-		EndTime: NewAbsoluteOrRelativeTimeTypeFromDuration(time.Minute * 1),
+		EndTime: NewAbsoluteOrRelativeTimeTypeFromDuration(time.Second * 3),
 	}
 	duration, err = tc.GetDuration()
 	assert.Nil(t, err)
-	assert.Equal(t, time.Minute*1, duration)
+	assert.Equal(t, time.Second*3, duration)
 
-	tc = NewTimePeriodTypeWithRelativeEndTime(time.Minute * 1)
+	tc = NewTimePeriodTypeWithRelativeEndTime(time.Second * 3)
 
 	duration, err = tc.GetDuration()
 	assert.Nil(t, err)
-	assert.Equal(t, time.Minute*1, duration)
+	assert.Equal(t, time.Second*3, duration)
 
 	data, err := json.Marshal(tc)
 	assert.Nil(t, err)
 	assert.NotNil(t, data)
-	assert.Equal(t, "{\"endTime\":\"PT1M\"}", string(data))
+	assert.Equal(t, "{\"endTime\":\"PT3S\"}", string(data))
 
 	var tp1 TimePeriodType
 	err = json.Unmarshal(data, &tp1)
@@ -42,12 +42,23 @@ func TestTimePeriodType(t *testing.T) {
 
 	duration, err = tc.GetDuration()
 	assert.Nil(t, err)
-	assert.Equal(t, time.Second*59, duration)
+	assert.Equal(t, time.Second*2, duration)
 
 	data, err = json.Marshal(tc)
 	assert.Nil(t, err)
 	assert.NotNil(t, data)
-	assert.Equal(t, "{\"endTime\":\"PT59S\"}", string(data))
+	assert.Equal(t, "{\"endTime\":\"PT2S\"}", string(data))
+
+	time.Sleep(time.Second * 3)
+
+	duration, err = tc.GetDuration()
+	assert.Nil(t, err)
+	assert.Equal(t, time.Second*0, duration)
+
+	data, err = json.Marshal(tc)
+	assert.Nil(t, err)
+	assert.NotNil(t, data)
+	assert.Equal(t, "{\"endTime\":\"P0D\"}", string(data))
 }
 
 func TestTimeType(t *testing.T) {
