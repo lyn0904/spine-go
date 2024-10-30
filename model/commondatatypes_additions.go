@@ -65,6 +65,10 @@ func getTimePeriodTypeDuration(t *TimePeriodType) (time.Duration, error) {
 	duration := endTime.Sub(now)
 	duration = duration.Round(time.Second)
 
+	if duration < 0 {
+		return 0, nil
+	}
+
 	return duration, nil
 }
 
