@@ -308,6 +308,8 @@ func CreateFunctionData[F any](featureType model.FeatureTypeType) []F {
 			createFunctionData[model.HeatPumpOperationWaterTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpWaterTemperatureDescriptionListData),
 			createFunctionData[model.HeatPumpOperationWaterTemperatureDataType, F](model.FunctionTypeHeatPumpOperationArea1WaterTemperatureData),
 			createFunctionData[model.HeatPumpOperationWaterTemperatureDataType, F](model.FunctionTypeHeatPumpOperationArea2WaterTemperatureData),
+			createFunctionData[model.HeatPumpRoomTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpRoomTemperatureDescriptionListData),
+			createFunctionData[model.HeatPumpOperationRoomTemperatureDataType, F](model.FunctionTypeHeatPumpRoomTemperatureData),
 		}...)
 	}
 

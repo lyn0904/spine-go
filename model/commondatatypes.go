@@ -961,6 +961,8 @@ const (
 	FunctionTypeHeatPumpWaterTemperatureDescriptionListData        FunctionType = "heatPumpWaterTemperatureDescriptionListData"
 	FunctionTypeHeatPumpOperationArea1WaterTemperatureData         FunctionType = "heatPumpOperationWaterArea1TemperatureData"
 	FunctionTypeHeatPumpOperationArea2WaterTemperatureData         FunctionType = "heatPumpOperationWaterArea2TemperatureData"
+	FunctionTypeHeatPumpRoomTemperatureDescriptionListData         FunctionType = "heatPumpRoomTemperatureDescriptionListData"
+	FunctionTypeHeatPumpRoomTemperatureData                        FunctionType = "heatPumpRoomTemperatureData"
 )
 
 type PossibleOperationsClassifierType struct {
