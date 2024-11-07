@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	shipapi "github.com/enbility/ship-go/api"
+	shipapi "github.com/lyn0904/ship-go/api"
 	"github.com/lyn0904/spine-go/model"
 	"github.com/lyn0904/spine-go/util"
 	"github.com/stretchr/testify/assert"

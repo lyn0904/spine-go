@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	shipapi "github.com/enbility/ship-go/api"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	shipapi "github.com/lyn0904/ship-go/api"
 	"github.com/lyn0904/spine-go/api"
 	"github.com/lyn0904/spine-go/model"
 	"github.com/lyn0904/spine-go/util"

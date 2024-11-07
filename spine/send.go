@@ -10,9 +10,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	shipapi "github.com/enbility/ship-go/api"
-	"github.com/enbility/ship-go/logging"
 	"github.com/golanguzb70/lrucache"
+	shipapi "github.com/lyn0904/ship-go/api"
+	"github.com/lyn0904/ship-go/logging"
 	"github.com/lyn0904/spine-go/api"
 	"github.com/lyn0904/spine-go/model"
 	"github.com/lyn0904/spine-go/util"

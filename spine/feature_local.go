@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/enbility/ship-go/logging"
+	"github.com/lyn0904/ship-go/logging"
 	"github.com/lyn0904/spine-go/api"
 	"github.com/lyn0904/spine-go/model"
 	"github.com/lyn0904/spine-go/util"
