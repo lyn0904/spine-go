@@ -83,7 +83,7 @@ type HeatPumpRoomTemperatureDescriptionListDataType struct {
 	HeatPumpRoomTemperatureDescriptionData []HeatPumpRoomTemperatureDescriptionDataType `json:"heatPumpRoomTemperatureDescriptionData,omitempty"`
 }
 
-type HeatPumpOperationRoomTemperatureDataType struct {
+type HeatPumpRoomTemperatureDataType struct {
 	Id    *HeatPumpRoomTemperatureId `json:"id,omitempty" eebus:"key"`
 	Value *HeatPumpRoomTemperature   `json:"value,omitempty"`
 }
