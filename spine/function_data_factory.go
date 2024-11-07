@@ -3,8 +3,8 @@ package spine
 import (
 	"fmt"
 
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
 )
 
 func CreateFunctionData[F any](featureType model.FeatureTypeType) []F {
@@ -296,6 +296,18 @@ func CreateFunctionData[F any](featureType model.FeatureTypeType) []F {
 			createFunctionData[model.TimeTableConstraintsListDataType, F](model.FunctionTypeTimeTableConstraintsListData),
 			createFunctionData[model.TimeTableDescriptionListDataType, F](model.FunctionTypeTimeTableDescriptionListData),
 			createFunctionData[model.TimeTableListDataType, F](model.FunctionTypeTimeTableListData),
+		}...)
+	}
+	if featureType == model.FeatureTypeTypeHeatPump || featureType == model.FeatureTypeTypeGeneric {
+		result = append(result, []F{
+			createFunctionData[model.HeatPumpPowerSwitchDescriptionListDataType, F](model.FunctionTypeHeatPumpPowerSwitchDescriptionListData),
+			createFunctionData[model.HeatPumpOperationPowerSwitchDataType, F](model.FunctionTypeHeatPumpOperationArea1PowerSwitchData),
+			createFunctionData[model.HeatPumpOperationPowerSwitchDataType, F](model.FunctionTypeHeatPumpOperationArea2PowerSwitchData),
+			createFunctionData[model.HeatPumpOperationModeDescriptionListDataType, F](model.FunctionTypeHeatPumpModeDescriptionListData),
+			createFunctionData[model.HeatPumpOperationModeDataType, F](model.FunctionTypeHeatPumpOperationModeData),
+			createFunctionData[model.HeatPumpOperationWaterTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpWaterTemperatureDescriptionListData),
+			createFunctionData[model.HeatPumpOperationWaterTemperatureDataType, F](model.FunctionTypeHeatPumpOperationArea1WaterTemperatureData),
+			createFunctionData[model.HeatPumpOperationWaterTemperatureDataType, F](model.FunctionTypeHeatPumpOperationArea2WaterTemperatureData),
 		}...)
 	}
 

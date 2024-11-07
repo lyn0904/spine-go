@@ -730,6 +730,7 @@ const (
 	FeatureTypeTypeBill                    FeatureTypeType = "Bill"
 	FeatureTypeTypeIdentification          FeatureTypeType = "Identification"
 	FeatureTypeTypeStateInformation        FeatureTypeType = "StateInformation"
+	FeatureTypeTypeHeatPump                FeatureTypeType = "HeatPump"
 )
 
 type FeatureSpecificUsageType string
@@ -952,6 +953,14 @@ const (
 	FunctionTypeElectricalConnectionCharacteristicData             FunctionType = "electricalConnectionCharacteristicData"
 	FunctionTypeElectricalConnectionCharacteristicListData         FunctionType = "electricalConnectionCharacteristicListData"
 	FunctionTypeStateInformationListData                           FunctionType = "stateInformationListData"
+	FunctionTypeHeatPumpPowerSwitchDescriptionListData             FunctionType = "heatPumpPowerSwitchDescriptionListData"
+	FunctionTypeHeatPumpOperationArea1PowerSwitchData              FunctionType = "heatPumpOperationArea1PowerSwitchData"
+	FunctionTypeHeatPumpOperationArea2PowerSwitchData              FunctionType = "heatPumpOperationArea2PowerSwitchData"
+	FunctionTypeHeatPumpModeDescriptionListData                    FunctionType = "heatPumpModeDescriptionListData"
+	FunctionTypeHeatPumpOperationModeData                          FunctionType = "heatPumpOperationModeData"
+	FunctionTypeHeatPumpWaterTemperatureDescriptionListData        FunctionType = "heatPumpWaterTemperatureDescriptionListData"
+	FunctionTypeHeatPumpOperationArea1WaterTemperatureData         FunctionType = "heatPumpOperationWaterArea1TemperatureData"
+	FunctionTypeHeatPumpOperationArea2WaterTemperatureData         FunctionType = "heatPumpOperationWaterArea2TemperatureData"
 )
 
 type PossibleOperationsClassifierType struct {

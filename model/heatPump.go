@@ -5,17 +5,17 @@ type HeatPumpDescription string
 type HeatPumpPowerSwitchId uint
 type HeatPumpPowerSwitch bool
 
-type HeatPumpPowerSwitchDescriptionDataType struct {
+type HeatPumpOperationPowerSwitchDescriptionDataType struct {
 	Id          *HeatPumpPowerSwitchId
 	PowerSwitch *HeatPumpPowerSwitch `json:"powerSwitch,omitempty"`
 	Description *HeatPumpDescription
 }
 
 type HeatPumpPowerSwitchDescriptionListDataType struct {
-	HeatPumpPowerSwitchDescriptionData []HeatPumpPowerSwitchDescriptionDataType `json:"heatPumpPowerSwitchDescriptionData,omitempty"`
+	HeatPumpPowerSwitchDescriptionData []HeatPumpOperationPowerSwitchDescriptionDataType `json:"heatPumpPowerSwitchDescriptionData,omitempty"`
 }
 
-type HeatPumpPowerSwitchDataType struct {
+type HeatPumpOperationPowerSwitchDataType struct {
 	Id          *HeatPumpPowerSwitchId
 	PowerSwitch *HeatPumpPowerSwitch `json:"powerSwitch,omitempty"`
 }
@@ -31,7 +31,7 @@ const (
 )
 
 type HeatPumpOperationModeDescriptionDataType struct {
-	ModeId      *HeatPumpModeId      `json:"modeId,omitempty"`
+	Id          *HeatPumpModeId      `json:"modeId,omitempty"`
 	Mode        *HeatPumpMode        `json:"mode,omitempty"`
 	Description *HeatPumpDescription `json:"description,omitempty"`
 }
@@ -41,27 +41,28 @@ type HeatPumpOperationModeDescriptionListDataType struct {
 }
 
 type HeatPumpOperationModeDataType struct {
-	Mode *HeatPumpMode `json:"mode,omitempty"`
+	Id   *HeatPumpModeId `json:"modeId,omitempty"`
+	Mode *HeatPumpMode   `json:"mode,omitempty"`
 }
 
 type HeatPumpWaterTemperatureId uint
 type HeatPumpWaterMinTemperature uint
 type HeatPumpWaterMaxTemperature uint
 
-type HeatPumpWaterTemperatureDescriptionDataType struct {
+type HeatPumpOperationWaterTemperatureDescriptionDataType struct {
 	Id          *HeatPumpWaterTemperatureId  `json:"id,omitempty"`
 	Max         *HeatPumpWaterMaxTemperature `json:"max,omitempty"`
 	Min         *HeatPumpWaterMaxTemperature `json:"min,omitempty"`
 	Description *HeatPumpDescription         `json:"description,omitempty"`
 }
 
-type HeatPumpWaterTemperatureDescriptionListDataType struct {
-	HeatPumpWaterTemperatureDescriptionData []HeatPumpWaterTemperatureDescriptionDataType `json:"heatPumpWaterTemperatureDescriptionData,omitempty"`
+type HeatPumpOperationWaterTemperatureDescriptionListDataType struct {
+	HeatPumpOperationWaterTemperatureDescriptionData []HeatPumpOperationWaterTemperatureDescriptionDataType `json:"heatPumpWaterTemperatureDescriptionData,omitempty"`
 }
 
 type HeatPumpWaterTemperature uint
 
-type HeatPumpWaterTemperatureDataType struct {
+type HeatPumpOperationWaterTemperatureDataType struct {
 	Id    *HeatPumpWaterTemperatureId `json:"waterTemperatureId,omitempty"`
 	Value *HeatPumpWaterTemperature   `json:"value,omitempty"`
 }
