@@ -20,6 +20,10 @@ type HeatPumpOperationPowerSwitchDataType struct {
 	PowerSwitch *HeatPumpPowerSwitch   `json:"powerSwitch,omitempty"`
 }
 
+type HeatPumpOperationPowerSwitchListDataType struct {
+	HeatPumpOperationPowerSwitchData []HeatPumpOperationPowerSwitchDataType
+}
+
 type HeatPumpModeId uint
 type HeatPumpMode string
 
@@ -45,6 +49,10 @@ type HeatPumpOperationModeDataType struct {
 	Mode *HeatPumpMode   `json:"mode,omitempty"`
 }
 
+type HeatPumpOperationModeListDataType struct {
+	HeatPumpOperationModeData []HeatPumpOperationModeDataType
+}
+
 type HeatPumpWaterTemperatureId uint
 type HeatPumpWaterMinTemperature uint
 type HeatPumpWaterMaxTemperature uint
@@ -67,6 +75,10 @@ type HeatPumpWaterTemperatureDataType struct {
 	Value *HeatPumpWaterTemperature   `json:"value,omitempty"`
 }
 
+type HeatPumpWaterTemperatureListDataType struct {
+	HeatPumpWaterTemperatureData []HeatPumpWaterTemperatureDataType
+}
+
 type HeatPumpRoomTemperatureId uint
 type HeatPumpRoomTemperature uint
 type HeatPumpRoomMinTemperature uint
@@ -86,4 +98,8 @@ type HeatPumpRoomTemperatureDescriptionListDataType struct {
 type HeatPumpRoomTemperatureDataType struct {
 	Id    *HeatPumpRoomTemperatureId `json:"id,omitempty" eebus:"key"`
 	Value *HeatPumpRoomTemperature   `json:"value,omitempty"`
+}
+
+type HeatPumpRoomTemperatureListDataType struct {
+	HeatPumpRoomTemperatureData []HeatPumpRoomTemperatureDataType
 }
