@@ -1,6 +1,6 @@
 package spine
 
-import "github.com/enbility/spine-go/model"
+import "github.com/lyn0904/spine-go/model"
 
 type Device struct {
 	address    *model.AddressDeviceType

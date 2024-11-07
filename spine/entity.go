@@ -4,9 +4,9 @@ import (
 	"sync"
 
 	"github.com/ahmetb/go-linq/v3"
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
-	"github.com/enbility/spine-go/util"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
+	"github.com/lyn0904/spine-go/util"
 )
 
 const DeviceInformationEntityId uint = 0

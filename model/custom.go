@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/enbility/spine-go/util"
+	"github.com/lyn0904/spine-go/util"
 )
 
 // provides a helper method to create hash values of custom structs for usage with collection updates

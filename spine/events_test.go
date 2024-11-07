@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/enbility/spine-go/api"
+	"github.com/lyn0904/spine-go/api"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

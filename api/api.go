@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/enbility/spine-go/model"
+	"github.com/lyn0904/spine-go/model"
 )
 
 //go:generate mockery

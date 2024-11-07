@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
 )
 
 func (r *NodeManagement) RequestDestinationListData(remoteDeviceAddress *model.AddressDeviceType, sender api.SenderInterface) (*model.MsgCounterType, *model.ErrorType) {

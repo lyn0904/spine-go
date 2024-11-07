@@ -1,6 +1,6 @@
 package api
 
-import "github.com/enbility/spine-go/model"
+import "github.com/lyn0904/spine-go/model"
 
 /* Entity */
 

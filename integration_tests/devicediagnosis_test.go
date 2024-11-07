@@ -3,9 +3,9 @@ package integrationtests
 import (
 	"testing"
 
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
-	"github.com/enbility/spine-go/spine"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
+	"github.com/lyn0904/spine-go/spine"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

@@ -3,7 +3,7 @@ package spine
 import (
 	"sync"
 
-	"github.com/enbility/spine-go/api"
+	"github.com/lyn0904/spine-go/api"
 )
 
 var Events events

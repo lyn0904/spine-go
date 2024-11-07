@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	api "github.com/enbility/spine-go/api"
+	api "github.com/lyn0904/spine-go/api"
 	mock "github.com/stretchr/testify/mock"
 )
 

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/enbility/spine-go/util"
+	"github.com/lyn0904/spine-go/util"
 )
 
 var nmMux sync.Mutex

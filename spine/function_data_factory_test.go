@@ -3,8 +3,8 @@ package spine
 import (
 	"testing"
 
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
 	"github.com/stretchr/testify/assert"
 )
 

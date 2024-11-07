@@ -4,8 +4,8 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
 )
 
 var notFoundError = errors.New("data not found")

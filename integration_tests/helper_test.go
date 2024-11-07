@@ -9,9 +9,9 @@ import (
 	"time"
 
 	shipapi "github.com/enbility/ship-go/api"
-	"github.com/enbility/spine-go/api"
-	"github.com/enbility/spine-go/model"
-	"github.com/enbility/spine-go/spine"
+	"github.com/lyn0904/spine-go/api"
+	"github.com/lyn0904/spine-go/model"
+	"github.com/lyn0904/spine-go/spine"
 )
 
 const (
