@@ -62,7 +62,7 @@ type HeatPumpOperationWaterTemperatureDescriptionListDataType struct {
 
 type HeatPumpWaterTemperature uint
 
-type HeatPumpOperationWaterTemperatureDataType struct {
+type HeatPumpWaterTemperatureDataType struct {
 	Id    *HeatPumpWaterTemperatureId `json:"id,omitempty" eebus:"key"`
 	Value *HeatPumpWaterTemperature   `json:"value,omitempty"`
 }
