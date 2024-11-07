@@ -52,7 +52,7 @@ type HeatPumpWaterMaxTemperature uint
 type HeatPumpOperationWaterTemperatureDescriptionDataType struct {
 	Id          *HeatPumpWaterTemperatureId  `json:"id,omitempty"`
 	Max         *HeatPumpWaterMaxTemperature `json:"max,omitempty"`
-	Min         *HeatPumpWaterMaxTemperature `json:"min,omitempty"`
+	Min         *HeatPumpWaterMinTemperature `json:"min,omitempty"`
 	Description *HeatPumpDescription         `json:"description,omitempty"`
 }
 
