@@ -71,6 +71,8 @@ func (r HeatPumpOperationModeListDataType) UpdateList(remoteWrite, persist bool,
 }
 
 // HeatPumpOperationWaterTemperatureDescriptionListDataType
+var _ Updater = (*HeatPumpOperationWaterTemperatureDescriptionListDataType)(nil)
+
 func (r HeatPumpOperationWaterTemperatureDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
 	var newData []HeatPumpOperationWaterTemperatureDescriptionDataType
 	if newList != nil {
@@ -86,6 +88,8 @@ func (r HeatPumpOperationWaterTemperatureDescriptionListDataType) UpdateList(rem
 }
 
 // HeatPumpWaterTemperatureListDataType
+var _ Updater = (*HeatPumpWaterTemperatureListDataType)(nil)
+
 func (r HeatPumpWaterTemperatureListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
 	var newData []HeatPumpWaterTemperatureDataType
 	if newList != nil {
@@ -100,7 +104,9 @@ func (r HeatPumpWaterTemperatureListDataType) UpdateList(remoteWrite, persist bo
 	return data, success
 }
 
-// HeatPumpRoomTemperatureDescriptionListDataType
+// UpdateList HeatPumpRoomTemperatureDescriptionListDataType
+var _ Updater = (*HeatPumpRoomTemperatureDescriptionListDataType)(nil)
+
 func (r HeatPumpRoomTemperatureDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
 	var newData []HeatPumpRoomTemperatureDescriptionDataType
 	if newList != nil {
@@ -115,7 +121,9 @@ func (r HeatPumpRoomTemperatureDescriptionListDataType) UpdateList(remoteWrite, 
 	return data, success
 }
 
-// HeatPumpRoomTemperatureListDataType
+// UpdateList HeatPumpRoomTemperatureListDataType
+var _ Updater = (*HeatPumpRoomTemperatureListDataType)(nil)
+
 func (r HeatPumpRoomTemperatureListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
 	var newData []HeatPumpRoomTemperatureDataType
 	if newList != nil {
