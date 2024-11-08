@@ -263,6 +263,14 @@ type FilterType struct {
 	TimeTableDataElements                                      *TimeTableDataElementsType                                      `json:"timeTableDataElements,omitempty" eebus:"typ:elements,fct:timeTableListData"`
 	TimeTableDescriptionDataElements                           *TimeTableDescriptionDataElementsType                           `json:"timeTableDescriptionDataElements,omitempty" eebus:"typ:elements,fct:timeTableDescriptionListData"`
 	UseCaseInformationDataElements                             *UseCaseInformationDataElementsType                             `json:"useCaseInformationDataElements,omitempty" eebus:"typ:elements,fct:useCaseInformationListData"`
+	HeatPumpPowerSwitchDescriptionListData                     *HeatPumpPowerSwitchDescriptionListDataType                     `json:"heatPumpPowerSwitchDescriptionListData,omitempty" eebus:"typ:elements,fct:heatPumpPowerSwitchDescriptionListData"`
+	HeatPumpOperationPowerSwitchListData                       *HeatPumpOperationPowerSwitchListDataType                       `json:"heatPumpOperationPowerSwitchListData,omitempty" eebus:"typ:elements,fct:heatPumpOperationPowerSwitchListData"`
+	HeatPumpOperationModeDescriptionListData                   *HeatPumpOperationModeDescriptionListDataType                   `json:"heatPumpOperationModeDescriptionListData,omitempty" eebus:"typ:elements,fct:heatPumpOperationModeDescriptionListData"`
+	HeatPumpOperationModeListData                              *HeatPumpOperationModeListDataType                              `json:"heatPumpOperationModeListData,omitempty" eebus:"typ:elements,fct:heatPumpOperationModeListData"`
+	HeatPumpOperationWaterTemperatureDescriptionListData       *HeatPumpOperationWaterTemperatureDescriptionListDataType       `json:"heatPumpOperationWaterTemperatureDescriptionListData,omitempty" eebus:"typ:elements,fct:heatPumpOperationWaterTemperatureDescriptionListData"`
+	HeatPumpWaterTemperatureListData                           *HeatPumpWaterTemperatureListDataType                           `json:"heatPumpWaterTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpWaterTemperatureListData"`
+	HeatPumpRoomTemperatureDescriptionListData                 *HeatPumpRoomTemperatureDescriptionListDataType                 `json:"heatPumpRoomTemperatureDescriptionListData,omitempty" eebus:"typ:elements,fct:heatPumpRoomTemperatureDescriptionListData"`
+	HeatPumpRoomTemperatureListData                            *HeatPumpRoomTemperatureListDataType                            `json:"heatPumpRoomTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpRoomTemperatureListData"`
 }
 
 type CmdControlType struct {
