@@ -21,7 +21,7 @@ type HeatPumpOperationPowerSwitchDataType struct {
 }
 
 type HeatPumpOperationPowerSwitchListDataType struct {
-	HeatPumpOperationPowerSwitchData []HeatPumpOperationPowerSwitchDataType
+	HeatPumpOperationPowerSwitchData []HeatPumpOperationPowerSwitchDataType `json:"heatPumpOperationPowerSwitchData,omitempty"`
 }
 
 type HeatPumpModeIdType uint
@@ -50,7 +50,7 @@ type HeatPumpOperationModeDataType struct {
 }
 
 type HeatPumpOperationModeListDataType struct {
-	HeatPumpOperationModeData []HeatPumpOperationModeDataType
+	HeatPumpOperationModeData []HeatPumpOperationModeDataType `json:"heatPumpOperationModeData,omitempty"`
 }
 
 type HeatPumpWaterTemperatureIdType uint
@@ -76,7 +76,7 @@ type HeatPumpWaterTemperatureDataType struct {
 }
 
 type HeatPumpWaterTemperatureListDataType struct {
-	HeatPumpWaterTemperatureData []HeatPumpWaterTemperatureDataType
+	HeatPumpWaterTemperatureData []HeatPumpWaterTemperatureDataType `json:"heatPumpWaterTemperatureData,omitempty"`
 }
 
 type HeatPumpRoomTemperatureIdType uint
@@ -101,5 +101,5 @@ type HeatPumpRoomTemperatureDataType struct {
 }
 
 type HeatPumpRoomTemperatureListDataType struct {
-	HeatPumpRoomTemperatureData []HeatPumpRoomTemperatureDataType
+	HeatPumpRoomTemperatureData []HeatPumpRoomTemperatureDataType `json:"heatPumpRoomTemperatureData,omitempty"`
 }
