@@ -1,134 +1,125 @@
 package model
 
-// HeatPumpPowerSwitchDescriptionListDataType
-var _ Updater = (*HeatPumpPowerSwitchDescriptionListDataType)(nil)
 
-func (r *HeatPumpPowerSwitchDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationPowerSwitchDescriptionDataType
+var _ Updater = (*HeatPumpArea1WaterTemperaturePowerSwitchListDataType)(nil)
+func (r HeatPumpArea1WaterTemperaturePowerSwitchListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpSwitchDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpPowerSwitchDescriptionListDataType).HeatPumpPowerSwitchDescriptionData
+		newData = newList.(*HeatPumpArea1WaterTemperaturePowerSwitchListDataType).HeatPumpArea1WaterTemperaturePowerSwitchData
 	}
 
-	data, success := UpdateList(remoteWrite, r.HeatPumpPowerSwitchDescriptionData, newData, filterPartial, filterDelete)
+	data, success := UpdateList(remoteWrite, r.HeatPumpArea1WaterTemperaturePowerSwitchData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpPowerSwitchDescriptionData = data
+		r.HeatPumpArea1WaterTemperaturePowerSwitchData = data
 	}
 
 	return data, success
 }
 
-// HeatPumpOperationPowerSwitchListDataType
-var _ Updater = (*HeatPumpOperationPowerSwitchListDataType)(nil)
-
-func (r *HeatPumpOperationPowerSwitchListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationPowerSwitchDataType
+var _ Updater = (*HeatPumpArea2WaterTemperaturePowerSwitchListDataType)(nil)
+func (r HeatPumpArea2WaterTemperaturePowerSwitchListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpSwitchDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpOperationPowerSwitchListDataType).HeatPumpOperationPowerSwitchData
+		newData = newList.(*HeatPumpArea2WaterTemperaturePowerSwitchListDataType).HeatPumpArea2WaterTemperaturePowerSwitchData
 	}
-	data, success := UpdateList(remoteWrite, r.HeatPumpOperationPowerSwitchData, newData, filterPartial, filterDelete)
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpArea2WaterTemperaturePowerSwitchData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpOperationPowerSwitchData = data
+		r.HeatPumpArea2WaterTemperaturePowerSwitchData = data
 	}
 
 	return data, success
 }
 
-//HeatPumpOperationModeDescriptionListDataType
-
-var _ Updater = (*HeatPumpOperationModeDescriptionListDataType)(nil)
-
-func (r HeatPumpOperationModeDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationModeDescriptionDataType
+var _ Updater = (*HeatPumpWaterTankPowerSwitchListDataType)(nil)
+func (r HeatPumpWaterTankPowerSwitchListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpSwitchDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpOperationModeDescriptionListDataType).HeatPumpOperationModeDescriptionData
+		newData = newList.(*HeatPumpWaterTankPowerSwitchListDataType).HeatPumpWaterTankPowerSwitchData
 	}
-	data, success := UpdateList(remoteWrite, r.HeatPumpOperationModeDescriptionData, newData, filterPartial, filterDelete)
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpWaterTankPowerSwitchData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpOperationModeDescriptionData = data
+		r.HeatPumpWaterTankPowerSwitchData = data
 	}
 
 	return data, success
 }
 
-// HeatPumpOperationModeListDataType
-var _ Updater = (*HeatPumpOperationModeListDataType)(nil)
-
-func (r HeatPumpOperationModeListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationModeDataType
+var _ Updater = (*HeatPumpRoomTemperaturePowerSwitchListDataType)(nil)
+func (r HeatPumpRoomTemperaturePowerSwitchListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpSwitchDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpOperationModeListDataType).HeatPumpOperationModeData
+		newData = newList.(*HeatPumpRoomTemperaturePowerSwitchListDataType).HeatPumpRoomTemperaturePowerSwitchData
 	}
-	data, success := UpdateList(remoteWrite, r.HeatPumpOperationModeData, newData, filterPartial, filterDelete)
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpRoomTemperaturePowerSwitchData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpOperationModeData = data
+		r.HeatPumpRoomTemperaturePowerSwitchData = data
 	}
 
 	return data, success
 }
 
-// HeatPumpOperationWaterTemperatureDescriptionListDataType
-var _ Updater = (*HeatPumpOperationWaterTemperatureDescriptionListDataType)(nil)
-
-func (r HeatPumpOperationWaterTemperatureDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationWaterTemperatureDescriptionDataType
+var _ Updater = (*HeatPumpModeListDataType)(nil)
+func (r HeatPumpModeListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpModeListDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpOperationWaterTemperatureDescriptionListDataType).HeatPumpOperationWaterTemperatureDescriptionData
+		newData = newList.(*HeatPumpModeListDataType).HeatPumpModeData
 	}
-	data, success := UpdateList(remoteWrite, r.HeatPumpOperationWaterTemperatureDescriptionData, newData, filterPartial, filterDelete)
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpModeData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpOperationWaterTemperatureDescriptionData = data
+		r.HeatPumpModeData = data
 	}
 
 	return data, success
 }
 
-// HeatPumpWaterTemperatureListDataType
-var _ Updater = (*HeatPumpWaterTemperatureListDataType)(nil)
-
-func (r HeatPumpWaterTemperatureListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpWaterTemperatureDataType
+var _ Updater = (*HeatPumpArea1WaterTemperatureListDataType)(nil)
+func (r HeatPumpArea1WaterTemperatureListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpTemperatureDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpWaterTemperatureListDataType).HeatPumpWaterTemperatureData
+		newData = newList.(*HeatPumpArea1WaterTemperatureListDataType).HeatPumpArea1WaterTemperatureData
 	}
-	data, success := UpdateList(remoteWrite, r.HeatPumpWaterTemperatureData, newData, filterPartial, filterDelete)
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpArea1WaterTemperatureData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpWaterTemperatureData = data
+		r.HeatPumpArea1WaterTemperatureData = data
 	}
 
 	return data, success
 }
 
-// UpdateList HeatPumpRoomTemperatureDescriptionListDataType
-var _ Updater = (*HeatPumpRoomTemperatureDescriptionListDataType)(nil)
-
-func (r HeatPumpRoomTemperatureDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpRoomTemperatureDescriptionDataType
+var _ Updater = (*HeatPumpArea2WaterTemperatureListDataType)(nil)
+func (r HeatPumpArea2WaterTemperatureListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpTemperatureDataType
 	if newList != nil {
-		newData = newList.(*HeatPumpRoomTemperatureDescriptionListDataType).HeatPumpRoomTemperatureDescriptionData
+		newData = newList.(*HeatPumpArea2WaterTemperatureListDataType).HeatPumpArea2WaterTemperatureData
 	}
-	data, success := UpdateList(remoteWrite, r.HeatPumpRoomTemperatureDescriptionData, newData, filterPartial, filterDelete)
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpArea2WaterTemperatureData, newData, filterPartial, filterDelete)
 
 	if success && persist {
-		r.HeatPumpRoomTemperatureDescriptionData = data
+		r.HeatPumpArea2WaterTemperatureData = data
 	}
 
 	return data, success
 }
 
-// UpdateList HeatPumpRoomTemperatureListDataType
 var _ Updater = (*HeatPumpRoomTemperatureListDataType)(nil)
-
 func (r HeatPumpRoomTemperatureListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpRoomTemperatureDataType
+	var newData []HeatPumpTemperatureDataType
 	if newList != nil {
 		newData = newList.(*HeatPumpRoomTemperatureListDataType).HeatPumpRoomTemperatureData
 	}
+
 	data, success := UpdateList(remoteWrite, r.HeatPumpRoomTemperatureData, newData, filterPartial, filterDelete)
 
 	if success && persist {
