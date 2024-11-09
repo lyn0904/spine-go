@@ -959,8 +959,11 @@ const (
 	FunctionTypeHeatPumpRoomTemperaturePowerSwitchListData         FunctionType = "heatPumpRoomTemperaturePowerSwitchListData"
 	FunctionTypeHeatPumpModeListData                               FunctionType = "heatPumpModeListData"
 	FunctionTypeHeatPumpArea1WaterTemperatureListData              FunctionType = "heatPumpArea1WaterTemperatureListData"
+	FunctionTypeHeatPumpArea1CurrentWaterTemperatureListData       FunctionType = "heatPumpArea1CurrentWaterTemperatureListData"
 	FunctionTypeHeatPumpArea2WaterTemperatureListData              FunctionType = "heatPumpArea2WaterTemperatureListData"
+	FunctionTypeHeatPumpArea2CurrentWaterTemperatureListData       FunctionType = "heatPumpArea2CurrentWaterTemperatureListData"
 	FunctionTypeHeatPumpRoomTemperatureListData                    FunctionType = "heatPumpRoomTemperatureListData"
+	FunctionTypeHeatPumpCurrentRoomTemperatureListData             FunctionType = "heatPumpCurrentRoomTemperatureListData"
 )
 
 type PossibleOperationsClassifierType struct {
