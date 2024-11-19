@@ -300,19 +300,16 @@ func CreateFunctionData[F any](featureType model.FeatureTypeType) []F {
 	}
 	if featureType == model.FeatureTypeTypeHeatPump || featureType == model.FeatureTypeTypeGeneric {
 		result = append(result, []F{
-			createFunctionData[model.HeatPumpArea1WaterTemperaturePowerSwitchListDataType, F](model.FunctionTypeHeatPumpArea1WaterTemperaturePowerSwitchListData),
-			createFunctionData[model.HeatPumpArea2WaterTemperaturePowerSwitchListDataType, F](model.FunctionTypeHeatPumpArea2WaterTemperaturePowerSwitchListData),
-			createFunctionData[model.HeatPumpWaterTankPowerSwitchListDataType, F](model.FunctionTypeHeatPumpWaterTankPowerSwitchListData),
-			createFunctionData[model.HeatPumpRoomTemperaturePowerSwitchListDataType, F](model.FunctionTypeHeatPumpRoomTemperaturePowerSwitchListData),
+			createFunctionData[model.HeatPumpPowerSwitchListDataType, F](model.FunctionTypeHeatPumpWaterTemperaturePowerSwitchListData),
+			createFunctionData[model.HeatPumpPowerSwitchListDataType, F](model.FunctionTypeHeatPumpWaterTankPowerSwitchListData),
+			createFunctionData[model.HeatPumpPowerSwitchListDataType, F](model.FunctionTypeHeatPumpRoomTemperaturePowerSwitchListData),
 
 			createFunctionData[model.HeatPumpModeListDataType, F](model.FunctionTypeHeatPumpModeListData),
-			createFunctionData[model.HeatPumpArea1WaterTemperatureListDataType, F](model.FunctionTypeHeatPumpArea1WaterTemperatureListData),
-			createFunctionData[model.HeatPumpArea1WaterTemperatureListDataType, F](model.FunctionTypeHeatPumpArea1CurrentWaterTemperatureListData),
-			createFunctionData[model.HeatPumpArea2WaterTemperatureListDataType, F](model.FunctionTypeHeatPumpArea2WaterTemperatureListData),
-			createFunctionData[model.HeatPumpArea2WaterTemperatureListDataType, F](model.FunctionTypeHeatPumpArea2CurrentWaterTemperatureListData),
+			createFunctionData[model.HeatPumpTemperatureListDataType, F](model.FunctionTypeHeatPumpWaterTemperatureListData),
+			createFunctionData[model.HeatPumpTemperatureListDataType, F](model.FunctionTypeHeatPumpCurrentWaterTemperatureListData),
 
-			createFunctionData[model.HeatPumpRoomTemperatureListDataType, F](model.FunctionTypeHeatPumpRoomTemperatureListData),
-			createFunctionData[model.HeatPumpRoomTemperatureListDataType, F](model.FunctionTypeHeatPumpCurrentRoomTemperatureListData),
+			createFunctionData[model.HeatPumpTemperatureListDataType, F](model.FunctionTypeHeatPumpRoomTemperatureListData),
+			createFunctionData[model.HeatPumpTemperatureListDataType, F](model.FunctionTypeHeatPumpCurrentRoomTemperatureListData),
 		}...)
 	}
 
