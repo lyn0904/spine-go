@@ -961,6 +961,7 @@ const (
 	FunctionTypeHeatPumpArea1WaterTemperatureListData              FunctionType = "heatPumpArea1WaterTemperatureListData"
 	FunctionTypeHeatPumpArea2WaterTemperatureListData              FunctionType = "heatPumpArea2WaterTemperatureListData"
 	FunctionTypeHeatPumpCurrentWaterTemperatureListData            FunctionType = "heatPumpCurrentWaterTemperatureListData"
+	FunctionTypeHeatPumpWaterTankTemperatureListData               FunctionType = "heatPumpWaterTankTemperatureListData"
 	FunctionTypeHeatPumpCurrentWaterTankTemperatureListData        FunctionType = "heatPumpCurrentWaterTankTemperatureListData"
 	FunctionTypeHeatPumpRoomTemperatureListData                    FunctionType = "heatPumpRoomTemperatureListData"
 	FunctionTypeHeatPumpCurrentRoomTemperatureListData             FunctionType = "heatPumpCurrentRoomTemperatureListData"

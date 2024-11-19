@@ -263,17 +263,19 @@ type FilterType struct {
 	TimeTableDataElements                                      *TimeTableDataElementsType                                      `json:"timeTableDataElements,omitempty" eebus:"typ:elements,fct:timeTableListData"`
 	TimeTableDescriptionDataElements                           *TimeTableDescriptionDataElementsType                           `json:"timeTableDescriptionDataElements,omitempty" eebus:"typ:elements,fct:timeTableDescriptionListData"`
 	UseCaseInformationDataElements                             *UseCaseInformationDataElementsType                             `json:"useCaseInformationDataElements,omitempty" eebus:"typ:elements,fct:useCaseInformationListData"`
-	HeatPumpArea1WaterTemperaturePowerSwitchListData           *HeatPumpPowerSwitchListDataType                                `json:"heatPumpArea1WaterTemperaturePowerSwitchListData,omitempty" eebus:"typ:elements,fct:heatPumpArea1WaterTemperaturePowerSwitchListData"`
-	HeatPumpArea2WaterTemperaturePowerSwitchListData           *HeatPumpPowerSwitchListDataType                                `json:"heatPumpArea2WaterTemperaturePowerSwitchListData,omitempty" eebus:"typ:elements,fct:heatPumpArea2WaterTemperaturePowerSwitchListData"`
-	HeatPumpWaterTankPowerSwitchListData                       *HeatPumpPowerSwitchListDataType                                `json:"heatPumpWaterTankPowerSwitchListData,omitempty" eebus:"typ:elements,fct:heatPumpWaterTankPowerSwitchListData"`
-	HeatPumpRoomTemperaturePowerSwitchListData                 *HeatPumpPowerSwitchListDataType                                `json:"heatPumpRoomTemperaturePowerSwitchListData,omitempty" eebus:"typ:elements,fct:heatPumpRoomTemperaturePowerSwitchListData"`
-	HeatPumpModeListData                                       *HeatPumpModeListDataType                                       `json:"heatPumpModeListData,omitempty" eebus:"typ:elements,fct:heatPumpModeListData"`
-	HeatPumpArea1WaterTemperatureListData                      *HeatPumpTemperatureListDataType                                `json:"heatPumpArea1WaterTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpArea1WaterTemperatureListData"`
-	HeatPumpArea2WaterTemperatureListData                      *HeatPumpTemperatureListDataType                                `json:"heatPumpArea2WaterTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpArea2WaterTemperatureListData"`
-	HeatPumpCurrentWaterTemperatureListData                    *HeatPumpTemperatureListDataType                                `json:"heatPumpCurrentWaterTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpCurrentWaterTemperatureListData"`
-	HeatPumpCurrentWaterTankTemperatureListData                *HeatPumpTemperatureListDataType                                `json:"heatPumpCurrentWaterTankTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpCurrentWaterTankTemperatureListData"`
-	HeatPumpRoomTemperatureListData                            *HeatPumpTemperatureListDataType                                `json:"heatPumpRoomTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpRoomTemperatureListData"`
-	HeatPumpCurrentRoomTemperatureListData                     *HeatPumpTemperatureListDataType                                `json:"heatPumpCurrentRoomTemperatureListData,omitempty" eebus:"typ:elements,fct:heatPumpCurrentRoomTemperatureListData"`
+
+	HeatPumpArea1WaterTemperaturePowerSwitchListData *HeatPumpArea1WaterTempPowerSwitchListDataType   `json:"heatPumpArea1WaterTemperaturePowerSwitchDataElements,omitempty" eebus:"typ:elements,fct:heatPumpArea1WaterTemperaturePowerSwitchListData"`
+	HeatPumpArea2WaterTemperaturePowerSwitchListData *HeatPumpArea2WaterTempPowerSwitchListDataType   `json:"heatPumpArea2WaterTemperaturePowerSwitchDataElements,omitempty" eebus:"typ:elements,fct:heatPumpArea2WaterTemperaturePowerSwitchListData"`
+	HeatPumpWaterTankPowerSwitchListData             *HeatPumpWaterTankPowerSwitchListDataType        `json:"heatPumpWaterTankPowerSwitchDataElements,omitempty" eebus:"typ:elements,fct:heatPumpWaterTankPowerSwitchListData"`
+	HeatPumpRoomTemperaturePowerSwitchListData       *HeatPumpRoomTempPowerSwitchListDataType         `json:"heatPumpRoomTemperaturePowerSwitchDataElements,omitempty" eebus:"typ:elements,fct:heatPumpRoomTemperaturePowerSwitchListData"`
+	HeatPumpModeListData                             *HeatPumpModeListDataType                        `json:"heatPumpModeDataElements,omitempty" eebus:"typ:elements,fct:heatPumpModeListData"`
+	HeatPumpArea1WaterTemperatureListData            *HeatPumpArea1WaterTemperatureListDataType       `json:"heatPumpArea1WaterTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpArea1WaterTemperatureListData"`
+	HeatPumpArea2WaterTemperatureListData            *HeatPumpArea2WaterTemperatureListDataType       `json:"heatPumpArea2WaterTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpArea2WaterTemperatureListData"`
+	HeatPumpCurrentWaterTemperatureListData          *HeatPumpCurrentWaterTemperatureListDataType     `json:"heatPumpCurrentWaterTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpCurrentWaterTemperatureListData"`
+	HeatPumpWaterTankTemperatureListData             *HeatPumpWaterTankTemperatureListDataType        `json:"heatPumpWaterTankTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpWaterTankTemperatureListData"`
+	HeatPumpCurrentWaterTankTemperatureListData      *HeatPumpCurrentWaterTankTemperatureListDataType `json:"heatPumpCurrentWaterTankTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpCurrentWaterTankTemperatureListData"`
+	HeatPumpRoomTemperatureListData                  *HeatPumpRoomTemperatureListDataType             `json:"heatPumpRoomTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpRoomTemperatureListData"`
+	HeatPumpCurrentRoomTemperatureListData           *HeatPumpCurrentRoomTemperatureListDataType      `json:"heatPumpCurrentRoomTemperatureDataElements,omitempty" eebus:"typ:elements,fct:heatPumpCurrentRoomTemperatureListData"`
 }
 
 type CmdControlType struct {
@@ -430,17 +432,20 @@ type CmdType struct {
 	TimeTableDescriptionListData                       *TimeTableDescriptionListDataType                       `json:"timeTableDescriptionListData,omitempty" eebus:"fct:timeTableDescriptionListData"`
 	TimeTableListData                                  *TimeTableListDataType                                  `json:"timeTableListData,omitempty" eebus:"fct:timeTableListData"`
 	UseCaseInformationListData                         *UseCaseInformationListDataType                         `json:"useCaseInformationListData,omitempty" eebus:"fct:useCaseInformationListData"`
-	HeatPumpArea1WaterTemperaturePowerSwitchListData   *HeatPumpPowerSwitchListDataType                        `json:"heatPumpArea1WaterTemperaturePowerSwitchListData,omitempty" eebus:"fct:heatPumpArea1WaterTemperaturePowerSwitchListData"`
-	HeatPumpArea2WaterTemperaturePowerSwitchListData   *HeatPumpPowerSwitchListDataType                        `json:"heatPumpArea2WaterTemperaturePowerSwitchListData,omitempty" eebus:"fct:heatPumpArea2WaterTemperaturePowerSwitchListData"`
-	HeatPumpWaterTankPowerSwitchListData               *HeatPumpPowerSwitchListDataType                        `json:"heatPumpWaterTankPowerSwitchListData,omitempty" eebus:"fct:heatPumpWaterTankPowerSwitchListData"`
-	HeatPumpRoomTemperaturePowerSwitchListData         *HeatPumpPowerSwitchListDataType                        `json:"heatPumpRoomTemperaturePowerSwitchListData,omitempty" eebus:"fct:heatPumpRoomTemperaturePowerSwitchListData"`
-	HeatPumpModeListData                               *HeatPumpModeListDataType                               `json:"heatPumpModeListData,omitempty" eebus:"fct:heatPumpModeListData"`
-	HeatPumpArea1WaterTemperatureListData              *HeatPumpTemperatureListDataType                        `json:"heatPumpArea1WaterTemperatureListData,omitempty" eebus:"fct:heatPumpArea1WaterTemperatureListData"`
-	HeatPumpArea2WaterTemperatureListData              *HeatPumpTemperatureListDataType                        `json:"heatPumpArea2WaterTemperatureListData,omitempty" eebus:"fct:heatPumpArea2WaterTemperatureListData"`
-	HeatPumpCurrentWaterTemperatureListData            *HeatPumpTemperatureListDataType                        `json:"heatPumpCurrentWaterTemperatureListData,omitempty" eebus:"fct:heatPumpCurrentWaterTemperatureListData"`
-	HeatPumpCurrentWaterTankTemperatureListData        *HeatPumpTemperatureListDataType                        `json:"heatPumpCurrentWaterTankTemperatureListData,omitempty" eebus:"fct:heatPumpCurrentWaterTankTemperatureListData"`
-	HeatPumpRoomTemperatureListData                    *HeatPumpTemperatureListDataType                        `json:"heatPumpRoomTemperatureListData,omitempty" eebus:"fct:heatPumpRoomTemperatureListData"`
-	HeatPumpCurrentRoomTemperatureListData             *HeatPumpTemperatureListDataType                        `json:"heatPumpCurrentRoomTemperatureListData,omitempty" eebus:"fct:heatPumpCurrentRoomTemperatureListData"`
+
+	HeatPumpArea1WaterTemperaturePowerSwitchListData *HeatPumpArea1WaterTempPowerSwitchListDataType   `json:"heatPumpArea1WaterTemperaturePowerSwitchData,omitempty" eebus:"fct:heatPumpArea1WaterTemperaturePowerSwitchListData"`
+	HeatPumpArea2WaterTemperaturePowerSwitchListData *HeatPumpArea2WaterTempPowerSwitchListDataType   `json:"heatPumpArea2WaterTemperaturePowerSwitchData,omitempty" eebus:"fct:heatPumpArea2WaterTemperaturePowerSwitchListData"`
+	HeatPumpWaterTankPowerSwitchListData             *HeatPumpWaterTankPowerSwitchListDataType        `json:"heatPumpWaterTankPowerSwitchData,omitempty" eebus:"fct:heatPumpWaterTankPowerSwitchListData"`
+	HeatPumpRoomTemperaturePowerSwitchListData       *HeatPumpRoomTempPowerSwitchListDataType         `json:"heatPumpRoomTemperaturePowerSwitchData,omitempty" eebus:"fct:heatPumpRoomTemperaturePowerSwitchListData"`
+	HeatPumpModeListData                             *HeatPumpModeListDataType                        `json:"heatPumpModeData,omitempty" eebus:"fct:heatPumpModeListData"`
+	HeatPumpArea1WaterTemperatureListData            *HeatPumpArea1WaterTemperatureListDataType       `json:"heatPumpArea1WaterTemperatureData,omitempty" eebus:"fct:heatPumpArea1WaterTemperatureListData"`
+	HeatPumpArea2WaterTemperatureListData            *HeatPumpArea2WaterTemperatureListDataType       `json:"heatPumpArea2WaterTemperatureData,omitempty" eebus:"fct:heatPumpArea2WaterTemperatureListData"`
+	HeatPumpCurrentWaterTemperatureListData          *HeatPumpCurrentWaterTemperatureListDataType     `json:"heatPumpCurrentWaterTemperatureData,omitempty" eebus:"fct:heatPumpCurrentWaterTemperatureListData"`
+	HeatPumpWaterTankTemperatureListData             *HeatPumpWaterTankTemperatureListDataType        `json:"heatPumpWaterTankTemperatureData,omitempty" eebus:"fct:heatPumpWaterTankTemperatureListData"`
+	HeatPumpCurrentWaterTankTemperatureListData      *HeatPumpCurrentWaterTankTemperatureListDataType `json:"heatPumpCurrentWaterTankTemperatureData,omitempty" eebus:"fct:heatPumpCurrentWaterTankTemperatureListData"`
+	HeatPumpRoomTemperatureListData                  *HeatPumpRoomTemperatureListDataType             `json:"heatPumpRoomTemperatureData,omitempty" eebus:"fct:heatPumpRoomTemperatureListData"`
+	HeatPumpCurrentRoomTemperatureListData           *HeatPumpCurrentRoomTemperatureListDataType      `json:"heatPumpCurrentRoomTemperatureData,omitempty" eebus:"fct:heatPumpCurrentRoomTemperatureListData"`
+
 	// DataExtendGroup
 	ManufacturerSpecificExtension *string                     `json:"manufacturerSpecificExtension,omitempty"`
 	LastUpdateAt                  *AbsoluteOrRelativeTimeType `json:"lastUpdateAt,omitempty"`

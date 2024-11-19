@@ -32,17 +32,50 @@ type HeatPumpTemperatureDataType struct {
 	Description *DescriptionType
 }
 
-// HeatPumpPowerSwitchListDataType 开关
-type HeatPumpPowerSwitchListDataType struct {
-	HeatPumpPowerSwitchData []HeatPumpSwitchDataType `json:"HeatPumpPowerSwitchData,omitempty"`
+type HeatPumpArea1WaterTempPowerSwitchListDataType struct {
+	HeatPumpArea1WaterTempPowerSwitchData []HeatPumpSwitchDataType `json:"heatPumpArea1WaterTempPowerSwitchData,omitempty"`
 }
 
-// HeatPumpModeListDataType 模式
+type HeatPumpArea2WaterTempPowerSwitchListDataType struct {
+	HeatPumpArea2WaterTempPowerSwitchData []HeatPumpSwitchDataType `json:"heatPumpArea2WaterTempPowerSwitchData,omitempty"`
+}
+
+type HeatPumpWaterTankPowerSwitchListDataType struct {
+	HeatPumpWaterTankPowerSwitchData []HeatPumpSwitchDataType `json:"heatPumpWaterTankPowerSwitchData,omitempty"`
+}
+
+type HeatPumpRoomTempPowerSwitchListDataType struct {
+	HeatPumpRoomTempPowerSwitchData []HeatPumpSwitchDataType `json:"heatPumpRoomTempPowerSwitchData,omitempty"`
+}
+
 type HeatPumpModeListDataType struct {
 	HeatPumpModeData []HeatPumpModeDataType `json:"heatPumpModeData,omitempty"`
 }
 
-// HeatPumpTemperatureListDataType 温度
-type HeatPumpTemperatureListDataType struct {
-	HeatPumpTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpTemperatureData,omitempty"`
+type HeatPumpArea1WaterTemperatureListDataType struct {
+	HeatPumpArea1WaterTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpArea1WaterTemperatureData,omitempty"`
+}
+
+type HeatPumpArea2WaterTemperatureListDataType struct {
+	HeatPumpArea2WaterTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpArea2WaterTemperatureData,omitempty"`
+}
+
+type HeatPumpCurrentWaterTemperatureListDataType struct {
+	HeatPumpCurrentWaterTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpCurrentWaterTemperatureData,omitempty"`
+}
+
+type HeatPumpWaterTankTemperatureListDataType struct {
+	HeatPumpWaterTankTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpWaterTankTemperatureData,omitempty"`
+}
+
+type HeatPumpCurrentWaterTankTemperatureListDataType struct {
+	HeatPumpCurrentWaterTankTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpCurrentWaterTankTemperatureData,omitempty"`
+}
+
+type HeatPumpRoomTemperatureListDataType struct {
+	HeatPumpRoomTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpRoomTemperatureData,omitempty"`
+}
+
+type HeatPumpCurrentRoomTemperatureListDataType struct {
+	HeatPumpCurrentRoomTemperatureData []HeatPumpTemperatureDataType `json:"heatPumpCurrentRoomTemperatureData,omitempty"`
 }
