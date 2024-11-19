@@ -959,6 +959,7 @@ const (
 	FunctionTypeHeatPumpModeListData                               FunctionType = "heatPumpModeListData"
 	FunctionTypeHeatPumpWaterTemperatureListData                   FunctionType = "heatPumpWaterTemperatureListData"
 	FunctionTypeHeatPumpCurrentWaterTemperatureListData            FunctionType = "heatPumpCurrentWaterTemperatureListData"
+	FunctionTypeHeatPumpCurrentWaterTankTemperatureListData        FunctionType = "heatPumpCurrentWaterTankTemperatureListData"
 	FunctionTypeHeatPumpRoomTemperatureListData                    FunctionType = "heatPumpRoomTemperatureListData"
 	FunctionTypeHeatPumpCurrentRoomTemperatureListData             FunctionType = "heatPumpCurrentRoomTemperatureListData"
 )
