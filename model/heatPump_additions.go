@@ -3,7 +3,7 @@ package model
 var _ Updater = (*HeatPumpOperationPowerSwitchDescriptionListDataType)(nil)
 
 func (r HeatPumpOperationPowerSwitchDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationPowerSwitchDescriptionDataType
+	var newData []HeatPumpPowerSwitchDescriptionDataType
 	if newList != nil {
 		newData = newList.(*HeatPumpOperationPowerSwitchDescriptionListDataType).HeatPumpOperationPowerSwitchDescriptionData
 	}
@@ -20,7 +20,7 @@ func (r HeatPumpOperationPowerSwitchDescriptionListDataType) UpdateList(remoteWr
 var _ Updater = (*HeatPumpOperationModeDescriptionListDataType)(nil)
 
 func (r HeatPumpOperationModeDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationModeDescriptionDataType
+	var newData []HeatPumpModeDescriptionDataType
 	if newList != nil {
 		newData = newList.(*HeatPumpOperationModeDescriptionListDataType).HeatPumpOperationModeDescriptionData
 	}
