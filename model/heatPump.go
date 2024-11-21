@@ -35,17 +35,7 @@ type HeatPumpOperationModeDescriptionDataType struct {
 	Description *DescriptionType      `json:"description,omitempty"`
 }
 
-type HeatPumpOperationTemperatureDescriptionDataType struct {
-	Id          *HeatPumpIdType          `json:"id,omitempty" eebus:"key"`
-	Temperature *HeatPumpTemperatureType `json:"temperature,omitempty"`
-	Unit        *HeatPumpTemperatureUnit `json:"unit,omitempty"`
-	Min         *HeatPumpMinTemperature  `json:"min,omitempty"`
-	Max         *HeatPumpMaxTemperature  `json:"Max,omitempty"`
-	Label       *LabelType               `json:"label,omitempty"`
-	Description *DescriptionType         `json:"description,omitempty"`
-}
-
-type HeatPumpCurrentTemperatureDescriptionDataType struct {
+type HeatPumpTemperatureDescriptionDataType struct {
 	Id          *HeatPumpIdType          `json:"id,omitempty" eebus:"key"`
 	Temperature *HeatPumpTemperatureType `json:"temperature,omitempty"`
 	Unit        *HeatPumpTemperatureUnit `json:"unit,omitempty"`
@@ -64,11 +54,11 @@ type HeatPumpOperationModeDescriptionListDataType struct {
 }
 
 type HeatPumpOperationTemperatureDescriptionListDataType struct {
-	HeatPumpOperationTemperatureDescriptionData []HeatPumpOperationTemperatureDescriptionDataType `json:"heatPumpOperationTemperatureDescriptionData,omitempty"`
+	HeatPumpOperationTemperatureDescriptionData []HeatPumpTemperatureDescriptionDataType `json:"heatPumpOperationTemperatureDescriptionData,omitempty"`
 }
 
 type HeatPumpCurrentTemperatureDescriptionListDataType struct {
-	HeatPumpCurrentTemperatureDescriptionData []HeatPumpCurrentTemperatureDescriptionDataType `json:"heatPumpCurrentTemperatureDescriptionData,omitempty"`
+	HeatPumpCurrentTemperatureDescriptionData []HeatPumpTemperatureDescriptionDataType `json:"heatPumpCurrentTemperatureDescriptionData,omitempty"`
 }
 
 type HeatPumpOperationPowerSwitchDescriptionListDataSelectorsType struct {
