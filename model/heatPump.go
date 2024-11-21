@@ -21,14 +21,14 @@ const (
 
 type HeatPumpTemperatureType uint
 
-type HeatPumpOperationPowerSwitchDescriptionDataType struct {
+type HeatPumpPowerSwitchDescriptionDataType struct {
 	Id          *HeatPumpIdType          `json:"id,omitempty" eebus:"key"`
 	PowerSwitch *HeatPumpPowerSwitchType `json:"powerSwitch,omitempty"`
 	Label       *LabelType               `json:"label,omitempty"`
 	Description *DescriptionType         `json:"description,omitempty"`
 }
 
-type HeatPumpOperationModeDescriptionDataType struct {
+type HeatPumpModeDescriptionDataType struct {
 	Id          *HeatPumpIdType       `json:"id,omitempty" eebus:"key"`
 	Mode        *HeatPumpModeTypeType `json:"heatPumpMode,omitempty"`
 	Label       *LabelType            `json:"label,omitempty"`
@@ -46,11 +46,11 @@ type HeatPumpTemperatureDescriptionDataType struct {
 }
 
 type HeatPumpOperationPowerSwitchDescriptionListDataType struct {
-	HeatPumpOperationPowerSwitchDescriptionData []HeatPumpOperationPowerSwitchDescriptionDataType `json:"heatPumpOperationPowerSwitchDescriptionData,omitempty"`
+	HeatPumpOperationPowerSwitchDescriptionData []HeatPumpPowerSwitchDescriptionDataType `json:"heatPumpOperationPowerSwitchDescriptionData,omitempty"`
 }
 
 type HeatPumpOperationModeDescriptionListDataType struct {
-	HeatPumpOperationModeDescriptionData []HeatPumpOperationModeDescriptionDataType `json:"heatPumpOperationModeDescriptionData,omitempty"`
+	HeatPumpOperationModeDescriptionData []HeatPumpModeDescriptionDataType `json:"heatPumpOperationModeDescriptionData,omitempty"`
 }
 
 type HeatPumpOperationTemperatureDescriptionListDataType struct {
