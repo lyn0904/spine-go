@@ -120,9 +120,11 @@ type FilterType struct {
 	TimeTableDescriptionListDataSelectors                     *TimeTableDescriptionListDataSelectorsType                     `json:"timeTableDescriptionListDataSelectors,omitempty" eebus:"typ:selector,fct:timeTableDescriptionListData"`
 	TimeTableListDataSelectors                                *TimeTableListDataSelectorsType                                `json:"timeTableListDataSelectors,omitempty" eebus:"typ:selector,fct:timeTableListData"`
 	UseCaseInformationListDataSelectors                       *UseCaseInformationListDataSelectorsType                       `json:"useCaseInformationListDataSelectors,omitempty" eebus:"typ:selector,fct:useCaseInformationListData"`
-	HeatPumpOperationPowerSwitchDescriptionListDataSelectors  *HeatPumpOperationPowerSwitchDescriptionListDataSelectorsType  `json:"heatPumpOperationPowerSwitchDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpPowerSwitchDescriptionListData"`
-	HeatPumpOperationModeDescriptionListDataSelectors         *HeatPumpOperationModeDescriptionListDataSelectorsType         `json:"heatPumpOperationModeDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpModeDescriptionListData"`
-	HeatPumpOperationTemperatureDescriptionListDataSelectors  *HeatPumpOperationTemperatureDescriptionListDataSelectorsType  `json:"heatPumpOperationTemperatureDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpTemperatureDescriptionListData"`
+	HeatPumpOperationPowerSwitchDescriptionListDataSelectors  *HeatPumpOperationPowerSwitchDescriptionListDataSelectorsType  `json:"heatPumpOperationPowerSwitchDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpOperationPowerSwitchDescriptionListData"`
+	HeatPumpOperationModeDescriptionListDataSelectors         *HeatPumpOperationModeDescriptionListDataSelectorsType         `json:"heatPumpOperationModeDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpOperationModeDescriptionListData"`
+	HeatPumpOperationTemperatureDescriptionListDataSelectors  *HeatPumpOperationTemperatureDescriptionListDataSelectorsType  `json:"heatPumpOperationTemperatureDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpOperationTemperatureDescriptionListData"`
+	HeatPumpCurrentTemperatureDescriptionListDataSelectors    *HeatPumpCurrentTemperatureDescriptionListDataSelectorsType    `json:"heatPumpCurrentTemperatureDescriptionListDataSelectors,omitempty" eebus:"type:selector,fct:heatPumpCurrentTemperatureDescriptionListData"`
+
 	// DataElementsChoiceGroup
 	ActuatorLevelDataElements                                  *ActuatorLevelDataElementsType                                  `json:"actuatorLevelDataElements,omitempty" eebus:"typ:elements,fct:actuatorLevelData"`
 	ActuatorLevelDescriptionDataElements                       *ActuatorLevelDescriptionDataElementsType                       `json:"actuatorLevelDescriptionDataElements,omitempty" eebus:"typ:elements,fct:actuatorLevelDescriptionData"`
@@ -421,9 +423,10 @@ type CmdType struct {
 	TimeTableDescriptionListData                       *TimeTableDescriptionListDataType                       `json:"timeTableDescriptionListData,omitempty" eebus:"fct:timeTableDescriptionListData"`
 	TimeTableListData                                  *TimeTableListDataType                                  `json:"timeTableListData,omitempty" eebus:"fct:timeTableListData"`
 	UseCaseInformationListData                         *UseCaseInformationListDataType                         `json:"useCaseInformationListData,omitempty" eebus:"fct:useCaseInformationListData"`
-	HeatPumpOperationPowerSwitchDescriptionListData    *HeatPumpOperationPowerSwitchDescriptionListDataType    `json:"heatPumpOperationPowerSwitchDescriptionListData,omitempty" eebus:"fct:heatPumpModeDescriptionListData"`
-	HeatPumpOperationModeDescriptionListData           *HeatPumpOperationModeDescriptionListDataType           `json:"heatPumpOperationModeDescriptionListData,omitempty" eebus:"fct:heatPumpModeDescriptionListData"`
-	HeatPumpOperationTemperatureDescriptionListData    *HeatPumpOperationTemperatureDescriptionListDataType    `json:"heatPumpOperationTemperatureDescriptionListData,omitempty" eebus:"fct:heatPumpTemperatureDescriptionListData"`
+	HeatPumpOperationPowerSwitchDescriptionListData    *HeatPumpOperationPowerSwitchDescriptionListDataType    `json:"heatPumpOperationPowerSwitchDescriptionListData,omitempty" eebus:"fct:heatPumpOperationPowerSwitchDescriptionListData"`
+	HeatPumpOperationModeDescriptionListData           *HeatPumpOperationModeDescriptionListDataType           `json:"heatPumpOperationModeDescriptionListData,omitempty" eebus:"fct:heatPumpOperationModeDescriptionListData"`
+	HeatPumpOperationTemperatureDescriptionListData    *HeatPumpOperationTemperatureDescriptionListDataType    `json:"heatPumpOperationTemperatureDescriptionListData,omitempty" eebus:"fct:heatPumpOperationTemperatureDescriptionListData"`
+	HeatPumpCurrentTemperatureDescriptionListData      *HeatPumpCurrentTemperatureDescriptionListDataType      `json:"heatPumpCurrentTemperatureDescriptionListData,omitempty" eebus:"fct:heatPumpCurrentTemperatureDescriptionListData"`
 
 	// DataExtendGroup
 	ManufacturerSpecificExtension *string                     `json:"manufacturerSpecificExtension,omitempty"`

@@ -953,9 +953,10 @@ const (
 	FunctionTypeElectricalConnectionCharacteristicData             FunctionType = "electricalConnectionCharacteristicData"
 	FunctionTypeElectricalConnectionCharacteristicListData         FunctionType = "electricalConnectionCharacteristicListData"
 	FunctionTypeStateInformationListData                           FunctionType = "stateInformationListData"
-	FunctionTypeHeatPumpPowerSwitchDescriptionListData             FunctionType = "heatPumpPowerSwitchDescriptionListData"
-	FunctionTypeHeatPumpModeDescriptionListData                    FunctionType = "heatPumpModeDescriptionListData"
-	FunctionTypeHeatPumpTemperatureDescriptionListData             FunctionType = "heatPumpTemperatureDescriptionListData"
+	FunctionTypeHeatPumpOperationPowerSwitchDescriptionListData    FunctionType = "heatPumpOperationPowerSwitchDescriptionListData"
+	FunctionTypeHeatPumpOperationModeDescriptionListData           FunctionType = "heatPumpOperationModeDescriptionListData"
+	FunctionTypeHeatPumpOperationTemperatureDescriptionListData    FunctionType = "heatPumpOperationTemperatureDescriptionListData"
+	FunctionTypeHeatPumpCurrentTemperatureDescriptionListData      FunctionType = "heatPumpCurrentTemperatureDescriptionListData"
 )
 
 type PossibleOperationsClassifierType struct {

@@ -50,3 +50,20 @@ func (r HeatPumpOperationTemperatureDescriptionListDataType) UpdateList(remoteWr
 
 	return data, success
 }
+
+var _ Updater = (*HeatPumpCurrentTemperatureDescriptionListDataType)(nil)
+
+func (r HeatPumpCurrentTemperatureDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
+	var newData []HeatPumpCurrentTemperatureDescriptionDataType
+	if newList != nil {
+		newData = newList.(*HeatPumpCurrentTemperatureDescriptionListDataType).HeatPumpCurrentTemperatureDescriptionData
+	}
+
+	data, success := UpdateList(remoteWrite, r.HeatPumpCurrentTemperatureDescriptionData, newData, filterPartial, filterDelete)
+
+	if success && persist {
+		r.HeatPumpCurrentTemperatureDescriptionData = data
+	}
+
+	return data, success
+}

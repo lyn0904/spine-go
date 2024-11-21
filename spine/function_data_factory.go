@@ -300,9 +300,10 @@ func CreateFunctionData[F any](featureType model.FeatureTypeType) []F {
 	}
 	if featureType == model.FeatureTypeTypeHeatPump || featureType == model.FeatureTypeTypeGeneric {
 		result = append(result, []F{
-			createFunctionData[model.HeatPumpOperationPowerSwitchDescriptionListDataType, F](model.FunctionTypeHeatPumpPowerSwitchDescriptionListData),
-			createFunctionData[model.HeatPumpOperationModeDescriptionListDataType, F](model.FunctionTypeHeatPumpModeDescriptionListData),
-			createFunctionData[model.HeatPumpOperationTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpTemperatureDescriptionListData),
+			createFunctionData[model.HeatPumpOperationPowerSwitchDescriptionListDataType, F](model.FunctionTypeHeatPumpOperationPowerSwitchDescriptionListData),
+			createFunctionData[model.HeatPumpOperationModeDescriptionListDataType, F](model.FunctionTypeHeatPumpOperationModeDescriptionListData),
+			createFunctionData[model.HeatPumpOperationTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpOperationTemperatureDescriptionListData),
+			createFunctionData[model.HeatPumpCurrentTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpCurrentTemperatureDescriptionListData),
 		}...)
 	}
 
