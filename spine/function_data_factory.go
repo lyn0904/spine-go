@@ -300,20 +300,9 @@ func CreateFunctionData[F any](featureType model.FeatureTypeType) []F {
 	}
 	if featureType == model.FeatureTypeTypeHeatPump || featureType == model.FeatureTypeTypeGeneric {
 		result = append(result, []F{
-			createFunctionData[model.HeatPumpArea1WaterTempPowerSwitchListDataType, F](model.FunctionTypeHeatPumpArea1WaterTemperaturePowerSwitchListData),
-			createFunctionData[model.HeatPumpArea2WaterTempPowerSwitchListDataType, F](model.FunctionTypeHeatPumpArea2WaterTemperaturePowerSwitchListData),
-			createFunctionData[model.HeatPumpWaterTankPowerSwitchListDataType, F](model.FunctionTypeHeatPumpWaterTankPowerSwitchListData),
-			createFunctionData[model.HeatPumpRoomTempPowerSwitchListDataType, F](model.FunctionTypeHeatPumpRoomTemperaturePowerSwitchListData),
-
-			createFunctionData[model.HeatPumpModeListDataType, F](model.FunctionTypeHeatPumpModeListData),
-			createFunctionData[model.HeatPumpArea1WaterTemperatureListDataType, F](model.FunctionTypeHeatPumpArea1WaterTemperatureListData),
-			createFunctionData[model.HeatPumpArea2WaterTemperatureListDataType, F](model.FunctionTypeHeatPumpArea2WaterTemperatureListData),
-			createFunctionData[model.HeatPumpCurrentWaterTemperatureListDataType, F](model.FunctionTypeHeatPumpCurrentWaterTemperatureListData),
-			createFunctionData[model.HeatPumpWaterTankTemperatureListDataType, F](model.FunctionTypeHeatPumpWaterTankTemperatureListData),
-			createFunctionData[model.HeatPumpCurrentWaterTankTemperatureListDataType, F](model.FunctionTypeHeatPumpCurrentWaterTankTemperatureListData),
-
-			createFunctionData[model.HeatPumpRoomTemperatureListDataType, F](model.FunctionTypeHeatPumpRoomTemperatureListData),
-			createFunctionData[model.HeatPumpCurrentRoomTemperatureListDataType, F](model.FunctionTypeHeatPumpCurrentRoomTemperatureListData),
+			createFunctionData[model.HeatPumpOperationPowerSwitchDescriptionListDataType, F](model.FunctionTypeHeatPumpPowerSwitchDescriptionListData),
+			createFunctionData[model.HeatPumpOperationModeDescriptionListDataType, F](model.FunctionTypeHeatPumpModeDescriptionListData),
+			createFunctionData[model.HeatPumpOperationTemperatureDescriptionListDataType, F](model.FunctionTypeHeatPumpTemperatureDescriptionListData),
 		}...)
 	}
 

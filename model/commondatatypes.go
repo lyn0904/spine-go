@@ -953,18 +953,9 @@ const (
 	FunctionTypeElectricalConnectionCharacteristicData             FunctionType = "electricalConnectionCharacteristicData"
 	FunctionTypeElectricalConnectionCharacteristicListData         FunctionType = "electricalConnectionCharacteristicListData"
 	FunctionTypeStateInformationListData                           FunctionType = "stateInformationListData"
-	FunctionTypeHeatPumpArea1WaterTemperaturePowerSwitchListData   FunctionType = "heatPumpArea1WaterTemperaturePowerSwitchListData"
-	FunctionTypeHeatPumpArea2WaterTemperaturePowerSwitchListData   FunctionType = "heatPumpArea2WaterTemperaturePowerSwitchListData"
-	FunctionTypeHeatPumpWaterTankPowerSwitchListData               FunctionType = "heatPumpWaterTankPowerSwitchListData"
-	FunctionTypeHeatPumpRoomTemperaturePowerSwitchListData         FunctionType = "heatPumpRoomTemperaturePowerSwitchListData"
-	FunctionTypeHeatPumpModeListData                               FunctionType = "heatPumpModeListData"
-	FunctionTypeHeatPumpArea1WaterTemperatureListData              FunctionType = "heatPumpArea1WaterTemperatureListData"
-	FunctionTypeHeatPumpArea2WaterTemperatureListData              FunctionType = "heatPumpArea2WaterTemperatureListData"
-	FunctionTypeHeatPumpCurrentWaterTemperatureListData            FunctionType = "heatPumpCurrentWaterTemperatureListData"
-	FunctionTypeHeatPumpWaterTankTemperatureListData               FunctionType = "heatPumpWaterTankTemperatureListData"
-	FunctionTypeHeatPumpCurrentWaterTankTemperatureListData        FunctionType = "heatPumpCurrentWaterTankTemperatureListData"
-	FunctionTypeHeatPumpRoomTemperatureListData                    FunctionType = "heatPumpRoomTemperatureListData"
-	FunctionTypeHeatPumpCurrentRoomTemperatureListData             FunctionType = "heatPumpCurrentRoomTemperatureListData"
+	FunctionTypeHeatPumpPowerSwitchDescriptionListData             FunctionType = "heatPumpPowerSwitchDescriptionListData"
+	FunctionTypeHeatPumpModeDescriptionListData                    FunctionType = "heatPumpModeDescriptionListData"
+	FunctionTypeHeatPumpTemperatureDescriptionListData             FunctionType = "heatPumpTemperatureDescriptionListData"
 )
 
 type PossibleOperationsClassifierType struct {
