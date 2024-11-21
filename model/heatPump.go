@@ -43,7 +43,7 @@ type HeatPumpOperationModeDescriptionListDataType struct {
 }
 
 type HeatPumpOperationTemperatureDescriptionListDataType struct {
-	HeatPumpOperationTemperatureDescriptionData []HeatPumpOperationTemperatureDescriptionListDataType `json:"heatPumpOperationTemperatureDescriptionData,omitempty"`
+	HeatPumpOperationTemperatureDescriptionData []HeatPumpOperationTemperatureDescriptionDataType `json:"heatPumpOperationTemperatureDescriptionData,omitempty"`
 }
 
 type HeatPumpOperationPowerSwitchDescriptionListDataSelectorsType struct {

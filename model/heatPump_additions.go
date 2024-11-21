@@ -37,7 +37,7 @@ func (r HeatPumpOperationModeDescriptionListDataType) UpdateList(remoteWrite, pe
 var _ Updater = (*HeatPumpOperationTemperatureDescriptionListDataType)(nil)
 
 func (r HeatPumpOperationTemperatureDescriptionListDataType) UpdateList(remoteWrite, persist bool, newList any, filterPartial, filterDelete *FilterType) (any, bool) {
-	var newData []HeatPumpOperationTemperatureDescriptionListDataType
+	var newData []HeatPumpOperationTemperatureDescriptionDataType
 	if newList != nil {
 		newData = newList.(*HeatPumpOperationTemperatureDescriptionListDataType).HeatPumpOperationTemperatureDescriptionData
 	}
