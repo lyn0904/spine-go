@@ -267,6 +267,10 @@ type FilterType struct {
 	TimeTableDataElements                                      *TimeTableDataElementsType                                      `json:"timeTableDataElements,omitempty" eebus:"typ:elements,fct:timeTableListData"`
 	TimeTableDescriptionDataElements                           *TimeTableDescriptionDataElementsType                           `json:"timeTableDescriptionDataElements,omitempty" eebus:"typ:elements,fct:timeTableDescriptionListData"`
 	UseCaseInformationDataElements                             *UseCaseInformationDataElementsType                             `json:"useCaseInformationDataElements,omitempty" eebus:"typ:elements,fct:useCaseInformationListData"`
+	HeatPumpOperationPowerSwitchDescriptionDataElementsType    *HeatPumpOperationPowerSwitchDescriptionDataElementsType        `json:"heatPumpOperationPowerSwitchDescriptionDataElementsType,omitempty" eebus:"typ:elements,fct:heatPumpOperationPowerSwitchDescriptionListData"`
+	HeatPumpOperationModeDescriptionDataElementsType           *HeatPumpOperationModeDescriptionDataElementsType               `json:"heatPumpOperationModeDescriptionDataElementsType,omitempty" eebus:"type:elements,fct:heatPumpOperationModeDescriptionListData"`
+	HeatPumpOperationTemperatureDescriptionDataElementsType    *HeatPumpOperationTemperatureDescriptionDataElementsType        `json:"heatPumpOperationTemperatureDescriptionDataElementsType,omitempty" eebus:"typ:elements,fct:heatPumpOperationTemperatureDescriptionListData"`
+	HeatPumpCurrentTemperatureDescriptionDataElementsType      *HeatPumpCurrentTemperatureDescriptionDataElementsType          `json:"heatPumpCurrentTemperatureDescriptionDataElementsType,omitempty" eebus:"typ:elements,fct:heatPumpCurrentTemperatureDescriptionListData"`
 }
 
 type CmdControlType struct {

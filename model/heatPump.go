@@ -76,3 +76,37 @@ type HeatPumpOperationTemperatureDescriptionListDataSelectorsType struct {
 type HeatPumpCurrentTemperatureDescriptionListDataSelectorsType struct {
 	Id *HeatPumpIdType `json:"id,omitempty"`
 }
+
+type HeatPumpOperationPowerSwitchDescriptionDataElementsType struct {
+	Id          *ElementTagType `json:"id,omitempty"`
+	PowerSwitch *ElementTagType `json:"powerSwitch,omitempty"`
+	Label       *ElementTagType `json:"label,omitempty"`
+	Description *ElementTagType `json:"description,omitempty"`
+}
+
+type HeatPumpOperationModeDescriptionDataElementsType struct {
+	Id          *ElementTagType `json:"id,omitempty"`
+	Mode        *ElementTagType `json:"heatPumpMode,omitempty"`
+	Label       *ElementTagType `json:"label,omitempty"`
+	Description *ElementTagType `json:"description,omitempty"`
+}
+
+type HeatPumpOperationTemperatureDescriptionDataElementsType struct {
+	Id          *ElementTagType `json:"id,omitempty"`
+	Temperature *ElementTagType `json:"temperature,omitempty"`
+	Unit        *ElementTagType `json:"unit,omitempty"`
+	Min         *ElementTagType `json:"min,omitempty"`
+	Max         *ElementTagType `json:"Max,omitempty"`
+	Label       *ElementTagType `json:"label,omitempty"`
+	Description *ElementTagType `json:"description,omitempty"`
+}
+
+type HeatPumpCurrentTemperatureDescriptionDataElementsType struct {
+	Id          *ElementTagType `json:"id,omitempty"`
+	Temperature *ElementTagType `json:"temperature,omitempty"`
+	Unit        *ElementTagType `json:"unit,omitempty"`
+	Min         *ElementTagType `json:"min,omitempty"`
+	Max         *ElementTagType `json:"Max,omitempty"`
+	Label       *ElementTagType `json:"label,omitempty"`
+	Description *ElementTagType `json:"description,omitempty"`
+}
